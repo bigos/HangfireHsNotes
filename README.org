@@ -3,8 +3,14 @@
 This repo is for notes about the [[https://github.com/bigos/HangfireHs][HangfireHs]] project.
 
 I use [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] because it is easier for me, but I am open to other suggestions.
-Still, you can edit those file using a regular test editor, so small
-contributions should not be a problem.
+Still, you can edit those file using a regular text editor, so small
+contributions should not be a problem. Also you can export org file to md using
+pandoc.
+
+#+BEGIN_EXAMPLE
+pandoc -s readme.org -o readme.md
+#+END_EXAMPLE
+
 
 ** Original documentation links
 
