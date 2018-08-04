@@ -36,4 +36,38 @@ TODO
 
 *** Simple specification of the early prototype.
 
+TODO
+
+**** toy engine for background jobs
+
+Why don't we create some simple code that simulates talking to the database,
+possibly making the tests easier as well.
+
+To get us off the ground we could only fire some terminal actions. What you think?
+
+TODO
+
+**** background job types
+
+Don't go yet for all the jobs possible.
+
+***** Fire-and-forget
+
+TODO
+
+***** Delayed
+
+TODO
+
+***** Recurring
+
+
+ Recurring
+
+ TODO
+
+**** testing
+
+TODO
+
 *** more TODO later
