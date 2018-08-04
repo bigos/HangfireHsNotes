@@ -1,0 +1,27 @@
+* HangfireHs Notes
+
+This repo is for notes about the [[https://github.com/bigos/HangfireHs][HangfireHs]] project.
+
+I use [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] because it is easier for me, but I am open to other suggestions.
+Still, you can edit those file using a regular test editor, so small
+contributions should not be a problem.
+
+** Original documentation links
+
+[[https://www.hangfire.io/][Main page]]
+
+[[https://www.hangfire.io/overview.html][Overview]]
+
+
+** Different goals
+
+Because we potentially target other platform and environments, this place will
+be for discussion about different databases support and other back-end storage
+issues
+
+TODO
+
+** Project planning
+
+TODO
+                                                                                 ##########
