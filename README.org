@@ -1,15 +1,16 @@
 * HangfireHs Notes
 
-This repo is for notes about the [[https://github.com/bigos/HangfireHs][HangfireHs]] project.
+ This repo is for notes about the [[https://github.com/bigos/HangfireHs][HangfireHs]] project.
 
-I use [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] because it is easier for me, but I am open to other suggestions.
-Still, you can edit those file using a regular text editor, so small
-contributions should not be a problem. Also you can export org file to md using
-pandoc.
+** Why do I use org mode?
 
-#+BEGIN_EXAMPLE
-pandoc -s readme.org -o readme.md
-#+END_EXAMPLE
+I use [[https://en.wikipedia.org/wiki/Org-mode][Org-mode]] because it is easier for me. Still, you can edit those file
+using a regular text editor, so small contributions should not be a problem.
+Also you can export org file to md using pandoc.
+
+ #+BEGIN_EXAMPLE
+ pandoc -s readme.org -o readme.md
+ #+END_EXAMPLE
 
 
 ** Original documentation links
@@ -23,11 +24,16 @@ pandoc -s readme.org -o readme.md
 
 Because we potentially target other platform and environments, this place will
 be for discussion about different databases support and other back-end storage
-issues
+issues.
+
+Also, for now, we want to create a simplified product inspired by Hangfire.
+Reviewing the strengths of technology we use and the weaknesses of our team, we
+will decide about the project scope.
 
 TODO
 
 ** Project planning
 
-TODO
-                                                                                 ##########
+*** Simple specification of the early prototype.
+
+*** more TODO later
