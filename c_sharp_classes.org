@@ -1,0 +1,351 @@
+* Classes
+
+This is the list of at least some classes. That should let you see the
+extent of the task.
+
+** AspNetCore
+
+#+BEGIN_EXAMPLE
+ Hangfire.AspNetCore/AspNetCore/AspNetCoreJobActivator.cs:23:    public class AspNetCoreJobActivator : JobActivator
+ Hangfire.AspNetCore/AspNetCore/AspNetCoreJobActivatorScope.cs:23:    internal class AspNetCoreJobActivatorScope : JobActivatorScope
+ Hangfire.AspNetCore/AspNetCore/AspNetCoreLog.cs:26:    internal class AspNetCoreLog : ILog
+ Hangfire.AspNetCore/AspNetCore/AspNetCoreLogProvider.cs:24:    public class AspNetCoreLogProvider : ILogProvider
+ Hangfire.AspNetCore/Dashboard/AspNetCoreDashboardContext.cs:25:    public sealed class AspNetCoreDashboardContext : DashboardContext
+ Hangfire.AspNetCore/Dashboard/AspNetCoreDashboardContextExtensions.cs:23:    public static class AspNetCoreDashboardContextExtensions
+ Hangfire.AspNetCore/Dashboard/AspNetCoreDashboardMiddleware.cs:27:    public class AspNetCoreDashboardMiddleware
+ Hangfire.AspNetCore/Dashboard/AspNetCoreDashboardRequest.cs:25:    internal sealed class AspNetCoreDashboardRequest : DashboardRequest
+ Hangfire.AspNetCore/Dashboard/AspNetCoreDashboardResponse.cs:26:    internal sealed class AspNetCoreDashboardResponse : DashboardResponse
+ Hangfire.AspNetCore/HangfireApplicationBuilderExtensions.cs:32:    public static class HangfireApplicationBuilderExtensions
+ Hangfire.AspNetCore/HangfireServiceCollectionExtensions.cs:33:    public static class HangfireServiceCollectionExtensions
+#+END_EXAMPLE
+
+** Core
+
+#+BEGIN_EXAMPLE
+Hangfire.Core/AppBuilderExtensions.cs:131:    public static class AppBuilderExtensions
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:74:    public static class LogExtensions
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:328:    public static class LogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:423:        internal class NoOpLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:432:    internal class LoggerExecutionWrapper : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:481:    public class NLogLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:525:        internal class NLogLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:663:    public class Log4NetLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:707:        internal class Log4NetLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:832:    public class EntLibLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:931:        internal class EntLibLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:987:    public class SerilogLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1046:        internal class SerilogCallbacks
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1122:        internal class SerilogLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1245:    public class LoupeLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1302:        internal class LoupeLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1372:    public class ColouredConsoleLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1437:        internal class ColouredConsoleLogger : ILog
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1488:    public class ElmahLogProvider : ILogProvider
+Hangfire.Core/App_Packages/LibLog.1.4/LibLog.cs:1558:        internal class ElmahLog : ILog
+Hangfire.Core/App_Packages/NCrontab/CrontabException.cs:26:    internal partial class CrontabException : Exception
+Hangfire.Core/App_Packages/NCrontab/CrontabField.cs:37:    internal sealed partial class CrontabField : ICrontabField
+Hangfire.Core/App_Packages/NCrontab/CrontabFieldImpl.cs:36:    internal sealed partial class CrontabFieldImpl
+Hangfire.Core/App_Packages/NCrontab/CrontabSchedule.cs:38:    internal sealed partial class CrontabSchedule
+Hangfire.Core/App_Packages/NCrontab/CrontabSchedule.cs:51:        public sealed partial class ParseOptions
+Hangfire.Core/App_Packages/NCrontab/StringSeparatorStock.cs:22:    internal static class StringSeparatorStock
+Hangfire.Core/App_Packages/StackTraceFormatter/StackTraceFormatter.cs:27:    partial class StackTraceHtmlFragments : IStackTraceFormatter<string>
+Hangfire.Core/App_Packages/StackTraceFormatter/StackTraceFormatter.cs:74:    static partial class StackTraceFormatter
+Hangfire.Core/App_Packages/StackTraceParser/StackTraceParser.cs:32:    partial class StackTraceParser
+Hangfire.Core/AutomaticRetryAttribute.cs:75:    public sealed class AutomaticRetryAttribute : JobFilterAttribute, IElectStateFilter, IApplyStateFilter
+Hangfire.Core/BackgroundJob.Instance.cs:23:    partial class BackgroundJob
+Hangfire.Core/BackgroundJob.cs:45:    public partial class BackgroundJob
+Hangfire.Core/BackgroundJobClient.cs:47:    public class BackgroundJobClient : IBackgroundJobClient
+Hangfire.Core/BackgroundJobClientException.cs:29:    public class BackgroundJobClientException : CreateJobFailedException
+Hangfire.Core/BackgroundJobClientExtensions.cs:32:    public static class BackgroundJobClientExtensions
+Hangfire.Core/BackgroundJobServer.cs:30:    public class BackgroundJobServer : IDisposable
+Hangfire.Core/BackgroundJobServerOptions.cs:25:    public class BackgroundJobServerOptions
+Hangfire.Core/CaptureCultureAttribute.cs:25:    public sealed class CaptureCultureAttribute : JobFilterAttribute, IClientFilter, IServerFilter
+Hangfire.Core/Client/BackgroundJobFactory.cs:26:    public class BackgroundJobFactory : IBackgroundJobFactory
+Hangfire.Core/Client/ClientExceptionContext.cs:25:    public class ClientExceptionContext : CreateContext
+Hangfire.Core/Client/CoreBackgroundJobFactory.cs:25:    internal class CoreBackgroundJobFactory : IBackgroundJobFactory
+Hangfire.Core/Client/CreateContext.cs:29:    public class CreateContext
+Hangfire.Core/Client/CreatedContext.cs:28:    public class CreatedContext : CreateContext
+Hangfire.Core/Client/CreatingContext.cs:25:    public class CreatingContext : CreateContext
+Hangfire.Core/Common/CachedExpressionCompiler.cs:17:    internal static class CachedExpressionCompiler
+Hangfire.Core/Common/CancellationTokenExtentions.cs:22:    public static class CancellationTokenExtentions
+Hangfire.Core/Common/CancellationTokenExtentions.cs:49:        public class CancellationEvent : IDisposable
+Hangfire.Core/Common/ExpressionUtil/BinaryExpressionFingerprint.cs:17:    internal sealed class BinaryExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/CachedExpressionCompiler.cs:15:    internal static class CachedExpressionCompiler
+Hangfire.Core/Common/ExpressionUtil/CachedExpressionCompiler.cs:27:        private static class Compiler<TIn, TOut>
+Hangfire.Core/Common/ExpressionUtil/ConditionalExpressionFingerprint.cs:16:    internal sealed class ConditionalExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/ConstantExpressionFingerprint.cs:20:    internal sealed class ConstantExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/DefaultExpressionFingerprint.cs:16:    internal sealed class DefaultExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/ExpressionFingerprint.cs:13:    internal abstract class ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/ExpressionFingerprintChain.cs:50:    internal sealed class ExpressionFingerprintChain : IEquatable<ExpressionFingerprintChain>
+Hangfire.Core/Common/ExpressionUtil/FingerprintingExpressionVisitor.cs:13:    internal sealed class FingerprintingExpressionVisitor : ExpressionVisitor
+Hangfire.Core/Common/ExpressionUtil/HashCodeCombiner.cs:10:    internal class HashCodeCombiner
+Hangfire.Core/Common/ExpressionUtil/HoistingExpressionVisitor.cs:16:    internal sealed class HoistingExpressionVisitor<TIn, TOut> : ExpressionVisitor
+Hangfire.Core/Common/ExpressionUtil/IndexExpressionFingerprint.cs:17:    internal sealed class IndexExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/LambdaExpressionFingerprint.cs:16:    internal sealed class LambdaExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/MemberExpressionFingerprint.cs:17:    internal sealed class MemberExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/MethodCallExpressionFingerprint.cs:17:    internal sealed class MethodCallExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/ParameterExpressionFingerprint.cs:16:    internal sealed class ParameterExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/TypeBinaryExpressionFingerprint.cs:16:    internal sealed class TypeBinaryExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/ExpressionUtil/UnaryExpressionFingerprint.cs:17:    internal sealed class UnaryExpressionFingerprint : ExpressionFingerprint
+Hangfire.Core/Common/Job.cs:76:    public partial class Job
+Hangfire.Core/Common/Job.cs:388:                throw new NotSupportedException("Global methods are not supported. Use class methods instead.");
+Hangfire.Core/Common/JobFilter.cs:26:    public class JobFilter
+Hangfire.Core/Common/JobFilterAttribute.cs:28:    public abstract class JobFilterAttribute : Attribute, IJobFilter
+Hangfire.Core/Common/JobFilterAttributeFilterProvider.cs:25:    public class JobFilterAttributeFilterProvider : IJobFilterProvider
+Hangfire.Core/Common/JobFilterCollection.cs:38:    public class JobFilterCollection : IJobFilterProvider, IEnumerable<JobFilter>
+Hangfire.Core/Common/JobFilterInfo.cs:28:    internal class JobFilterInfo
+Hangfire.Core/Common/JobFilterProviderCollection.cs:27:    public class JobFilterProviderCollection : Collection<IJobFilterProvider>, IJobFilterProvider
+Hangfire.Core/Common/JobFilterProviderCollection.cs:89:        private class FilterComparer : IComparer<JobFilter>
+Hangfire.Core/Common/JobFilterProviders.cs:22:    public static class JobFilterProviders
+Hangfire.Core/Common/JobHelper.cs:24:    public static class JobHelper
+Hangfire.Core/Common/JobLoadException.cs:26:    public class JobLoadException : Exception
+Hangfire.Core/Common/MethodInfoExtensions.cs:22:    internal static class MethodInfoExtensions
+Hangfire.Core/Common/ReflectedAttributeCache.cs:26:    internal static class ReflectedAttributeCache
+Hangfire.Core/Common/TypeExtensions.cs:26:    internal static class TypeExtensions
+Hangfire.Core/ContinuationsSupportAttribute.cs:30:    public class ContinuationsSupportAttribute : JobFilterAttribute, IElectStateFilter, IApplyStateFilter
+Hangfire.Core/Cron.cs:24:    public static class Cron
+Hangfire.Core/Dashboard/BatchCommandDispatcher.cs:23:    internal class BatchCommandDispatcher : IDashboardDispatcher
+Hangfire.Core/Dashboard/CombinedResourceDispatcher.cs:22:    internal class CombinedResourceDispatcher : EmbeddedResourceDispatcher
+Hangfire.Core/Dashboard/CommandDispatcher.cs:23:    internal class CommandDispatcher : IDashboardDispatcher
+Hangfire.Core/Dashboard/Content/resx/Strings.Designer.cs:27:    public class Strings {
+Hangfire.Core/Dashboard/DashboardContext.cs:23:    public abstract class DashboardContext
+Hangfire.Core/Dashboard/DashboardMetric.cs:21:    public class DashboardMetric
+Hangfire.Core/Dashboard/DashboardMetrics.cs:26:    public static class DashboardMetrics
+Hangfire.Core/Dashboard/DashboardRequest.cs:22:    public abstract class DashboardRequest
+Hangfire.Core/Dashboard/DashboardResponse.cs:23:    public abstract class DashboardResponse
+Hangfire.Core/Dashboard/DashboardRoutes.cs:23:    public static class DashboardRoutes
+Hangfire.Core/Dashboard/EmbeddedResourceDispatcher.cs:24:    internal class EmbeddedResourceDispatcher : IDashboardDispatcher
+Hangfire.Core/Dashboard/HtmlHelper.cs:33:    public class HtmlHelper
+Hangfire.Core/Dashboard/JobHistoryRenderer.cs:26:    public static class JobHistoryRenderer
+Hangfire.Core/Dashboard/JobMethodCallRenderer.cs:30:    internal static class JobMethodCallRenderer
+Hangfire.Core/Dashboard/JobMethodCallRenderer.cs:245:        private class ArgumentRenderer
+Hangfire.Core/Dashboard/JobMethodCallRenderer.cs:427:    internal static class TypeExtensionMethods
+Hangfire.Core/Dashboard/JobsSidebarMenu.cs:23:    public static class JobsSidebarMenu
+Hangfire.Core/Dashboard/JsonStats.cs:26:    internal class JsonStats : IDashboardDispatcher
+Hangfire.Core/Dashboard/JsonStats.cs:54:        private class StubPage : RazorPage
+Hangfire.Core/Dashboard/LocalRequestsOnlyAuthorizationFilter.cs:22:    public class LocalRequestsOnlyAuthorizationFilter : IDashboardAuthorizationFilter
+Hangfire.Core/Dashboard/MenuItem.cs:22:    public class MenuItem
+Hangfire.Core/Dashboard/Metric.cs:19:    public class Metric
+Hangfire.Core/Dashboard/Metric.cs:48:    internal static class MetricStyleExtensions
+Hangfire.Core/Dashboard/NavigationMenu.cs:23:    public static class NavigationMenu
+Hangfire.Core/Dashboard/NonEscapedString.cs:19:    public class NonEscapedString
+Hangfire.Core/Dashboard/Owin/MiddlewareExtensions.cs:42:    public static class MiddlewareExtensions
+Hangfire.Core/Dashboard/Owin/OwinDashboardContext.cs:23:    public sealed class OwinDashboardContext : DashboardContext
+Hangfire.Core/Dashboard/Owin/OwinDashboardContextExtensions.cs:23:    public static class OwinDashboardContextExtensions
+Hangfire.Core/Dashboard/Owin/OwinDashboardRequest.cs:25:    internal sealed class OwinDashboardRequest : DashboardRequest
+Hangfire.Core/Dashboard/Owin/OwinDashboardResponse.cs:26:    internal sealed class OwinDashboardResponse : DashboardResponse
+Hangfire.Core/Dashboard/Owin/OwinRequestExtensions.cs:7:    internal static class OwinRequestExtensions
+Hangfire.Core/Dashboard/Pager.cs:22:    public class Pager
+Hangfire.Core/Dashboard/Pager.cs:150:        internal class Item
+Hangfire.Core/Dashboard/Pages/AwaitingJobsPage.generated.cs:60:    internal partial class AwaitingJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/BlockMetric.cs:3:    partial class BlockMetric
+Hangfire.Core/Dashboard/Pages/Breadcrumbs.cs:5:    partial class Breadcrumbs
+Hangfire.Core/Dashboard/Pages/DeletedJobsPage.generated.cs:38:    internal partial class DeletedJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/EnqueuedJobsPage.cs:3:    partial class EnqueuedJobsPage
+Hangfire.Core/Dashboard/Pages/EnqueuedJobsPage.generated.cs:49:    internal partial class EnqueuedJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/FailedJobsPage.generated.cs:43:    internal partial class FailedJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/FetchedJobsPage.cs:3:    partial class FetchedJobsPage
+Hangfire.Core/Dashboard/Pages/FetchedJobsPage.generated.cs:49:    internal partial class FetchedJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/HomePage.cs:5:    partial class HomePage
+Hangfire.Core/Dashboard/Pages/HomePage.generated.cs:54:    internal partial class HomePage : RazorPage
+Hangfire.Core/Dashboard/Pages/InlineMetric.cs:3:    partial class InlineMetric
+Hangfire.Core/Dashboard/Pages/JobDetailsPage.cs:5:    partial class JobDetailsPage
+Hangfire.Core/Dashboard/Pages/JobDetailsPage1.generated.cs:83:    internal partial class JobDetailsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/LayoutPage.cs:3:    partial class LayoutPage
+Hangfire.Core/Dashboard/Pages/LayoutPage.generated.cs:55:    public partial class LayoutPage : RazorPage
+Hangfire.Core/Dashboard/Pages/ProcessingJobsPage.generated.cs:48:    internal partial class ProcessingJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/QueuesPage.generated.cs:43:    internal partial class QueuesPage : RazorPage
+Hangfire.Core/Dashboard/Pages/RecurringJobsPage.generated.cs:60:    internal partial class RecurringJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/RetriesPage.generated.cs:55:    internal partial class RetriesPage : RazorPage
+Hangfire.Core/Dashboard/Pages/ScheduledJobsPage.generated.cs:38:    internal partial class ScheduledJobsPage : RazorPage
+Hangfire.Core/Dashboard/Pages/ServersPage.generated.cs:54:    internal partial class ServersPage : RazorPage
+Hangfire.Core/Dashboard/Pages/SidebarMenu.cs:23:    partial class SidebarMenu
+Hangfire.Core/Dashboard/Pages/SucceededJobs1.generated.cs:43:    internal partial class SucceededJobs : RazorPage
+Hangfire.Core/Dashboard/Pages/_BlockMetric.generated.cs:32:    internal partial class BlockMetric : RazorPage
+Hangfire.Core/Dashboard/Pages/_Breadcrumbs.generated.cs:26:    internal partial class Breadcrumbs : RazorPage
+Hangfire.Core/Dashboard/Pages/_InlineMetric.generated.cs:26:    internal partial class InlineMetric : RazorPage
+Hangfire.Core/Dashboard/Pages/_Navigation.generated.cs:26:    internal partial class Navigation : RazorPage
+Hangfire.Core/Dashboard/Pages/_Paginator.cs:3:    partial class Paginator
+Hangfire.Core/Dashboard/Pages/_Paginator.generated.cs:32:    internal partial class Paginator : RazorPage
+Hangfire.Core/Dashboard/Pages/_PerPageSelector.cs:3:    partial class PerPageSelector
+Hangfire.Core/Dashboard/Pages/_PerPageSelector.generated.cs:26:    internal partial class PerPageSelector : Hangfire.Dashboard.RazorPage
+Hangfire.Core/Dashboard/Pages/_SidebarMenu.generated.cs:26:    internal partial class SidebarMenu : RazorPage
+Hangfire.Core/Dashboard/RazorPage.cs:25:    public abstract class RazorPage
+Hangfire.Core/Dashboard/RazorPageDispatcher.cs:23:    internal class RazorPageDispatcher : IDashboardDispatcher
+Hangfire.Core/Dashboard/RouteCollection.cs:24:    public class RouteCollection
+Hangfire.Core/Dashboard/RouteCollectionExtensions.cs:24:    public static class RouteCollectionExtensions
+Hangfire.Core/Dashboard/UrlHelper.cs:23:    public class UrlHelper
+Hangfire.Core/DashboardOptions.cs:23:    public class DashboardOptions
+Hangfire.Core/DisableConcurrentExecutionAttribute.cs:23:    public class DisableConcurrentExecutionAttribute : JobFilterAttribute, IServerFilter
+Hangfire.Core/GlobalConfiguration.cs:19:    public class GlobalConfiguration : IGlobalConfiguration
+Hangfire.Core/GlobalConfigurationExtensions.cs:28:    public static class GlobalConfigurationExtensions
+Hangfire.Core/GlobalConfigurationExtensions.cs:173:        private class ConfigurationEntry<T> : IGlobalConfiguration<T>
+Hangfire.Core/GlobalJobFilters.cs:24:    public static class GlobalJobFilters
+Hangfire.Core/GlobalStateHandlers.cs:22:    public static class GlobalStateHandlers
+Hangfire.Core/JobActivator.cs:23:    public class JobActivator
+Hangfire.Core/JobActivator.cs:64:        class SimpleJobActivatorScope : JobActivatorScope
+Hangfire.Core/JobActivatorContext.cs:24:    public class JobActivatorContext
+Hangfire.Core/JobActivatorScope.cs:22:    public abstract class JobActivatorScope : IDisposable
+Hangfire.Core/JobCancellationToken.cs:22:    public class JobCancellationToken : IJobCancellationToken
+Hangfire.Core/JobStorage.cs:27:    public abstract class JobStorage
+Hangfire.Core/LatencyTimeoutAttribute.cs:14:    public sealed class LatencyTimeoutAttribute : JobFilterAttribute, IElectStateFilter
+Hangfire.Core/MoreLinq/MoreEnumerable.Pairwise.cs:24:    static partial class MoreEnumerable
+Hangfire.Core/Obsolete/BootstrapperConfigurationExtensions.cs:23:    public static class BootstrapperConfigurationExtensions
+Hangfire.Core/Obsolete/CreateJobFailedException.cs:27:    public class CreateJobFailedException : Exception
+Hangfire.Core/Obsolete/DashboardMiddleware.cs:29:    internal class DashboardMiddleware : OwinMiddleware
+Hangfire.Core/Obsolete/DashboardOwinExtensions.cs:28:    public static class DashboardOwinExtensions
+Hangfire.Core/Obsolete/Job.Obsolete.cs:15:    partial class Job
+Hangfire.Core/Obsolete/OwinBootstrapper.cs:27:    public static class OwinBootstrapper
+Hangfire.Core/Obsolete/RequestDispatcherContext.cs:26:    public class RequestDispatcherContext
+Hangfire.Core/Obsolete/RequestDispatcherWrapper.cs:25:    public class RequestDispatcherWrapper : IDashboardDispatcher
+Hangfire.Core/Obsolete/ServerOwinExtensions.cs:28:    public static class ServerOwinExtensions
+Hangfire.Core/Obsolete/ServerWatchdogOptions.cs:24:    public class ServerWatchdogOptions
+Hangfire.Core/Obsolete/StartupConfiguration.cs:25:    internal class BootstrapperConfiguration : IBootstrapperConfiguration
+Hangfire.Core/Obsolete/StateContext.cs:26:    public abstract class StateContext
+Hangfire.Core/Properties/Annotations.cs:8:    internal sealed class ExcludeFromCodeCoverageAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:44:  public sealed class CanBeNullAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:60:  public sealed class NotNullAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:78:  public sealed class StringFormatMethodAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:104:  public sealed class InvokerParameterNameAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:144:  public sealed class NotifyPropertyChangedInvocatorAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:198:  public sealed class ContractAnnotationAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:224:  public sealed class LocalizationRequiredAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:260:  public sealed class CannotApplyEqualityOperatorAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:274:  public sealed class BaseTypeRequiredAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:290:  public sealed class UsedImplicitlyAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:318:  public sealed class MeansImplicitUseAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:378:  public sealed class PublicAPIAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:397:  public sealed class InstantHandleAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:411:  public sealed class PureAttribute : Attribute { }
+Hangfire.Core/Properties/Annotations.cs:416:  public sealed class HtmlElementAttributesAttribute : Attribute
+Hangfire.Core/Properties/Annotations.cs:430:  public sealed class HtmlAttributeValueAttribute : Attribute
+Hangfire.Core/Properties/NamespaceDoc.cs:13:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:29:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:43:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:55:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:68:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:80:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:93:    class NamespaceGroupDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:103:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:116:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:131:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:146:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:160:    class NamespaceGroupDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:171:    class NamespaceDoc
+Hangfire.Core/Properties/NamespaceDoc.cs:187:    class NamespaceDoc
+Hangfire.Core/QueueAttribute.cs:48:    public sealed class QueueAttribute : JobFilterAttribute, IElectStateFilter
+Hangfire.Core/RecurringJob.cs:25:    public static class RecurringJob
+Hangfire.Core/RecurringJobManager.cs:32:    public class RecurringJobManager : IRecurringJobManager
+Hangfire.Core/RecurringJobManagerExtensions.cs:24:    public static class RecurringJobManagerExtensions
+Hangfire.Core/RecurringJobOptions.cs:23:    public class RecurringJobOptions
+Hangfire.Core/Server/AutomaticRetryProcess.cs:25:    internal class AutomaticRetryProcess : IBackgroundProcessWrapper
+Hangfire.Core/Server/BackgroundJobPerformer.cs:25:    public class BackgroundJobPerformer : IBackgroundJobPerformer
+Hangfire.Core/Server/BackgroundProcessContext.cs:25:    public class BackgroundProcessContext
+Hangfire.Core/Server/BackgroundProcessingServer.cs:44:    public sealed class BackgroundProcessingServer : IBackgroundProcess, IDisposable
+Hangfire.Core/Server/BackgroundProcessingServerOptions.cs:21:    public sealed class BackgroundProcessingServerOptions
+Hangfire.Core/Server/CoreBackgroundJobPerformer.cs:27:    internal class CoreBackgroundJobPerformer : IBackgroundJobPerformer
+Hangfire.Core/Server/DelayedJobScheduler.cs:61:    public class DelayedJobScheduler : IBackgroundProcess
+Hangfire.Core/Server/EveryMinuteThrottler.cs:23:    internal class EveryMinuteThrottler : IThrottler
+Hangfire.Core/Server/InfiniteLoopProcess.cs:24:    internal class InfiniteLoopProcess : IBackgroundProcessWrapper
+Hangfire.Core/Server/JobAbortedException.cs:21:    public class JobAbortedException : OperationCanceledException
+Hangfire.Core/Server/JobPerformanceException.cs:21:    public class JobPerformanceException : Exception
+Hangfire.Core/Server/PerformContext.cs:29:    public class PerformContext
+Hangfire.Core/Server/PerformedContext.cs:25:    public class PerformedContext : PerformContext
+Hangfire.Core/Server/PerformingContext.cs:23:    public class PerformingContext : PerformContext
+Hangfire.Core/Server/RecurringJobScheduler.cs:66:    public class RecurringJobScheduler : IBackgroundProcess
+Hangfire.Core/Server/ScheduleInstant.cs:25:    internal class ScheduleInstant : IScheduleInstant
+Hangfire.Core/Server/ServerContext.cs:19:    public class ServerContext
+Hangfire.Core/Server/ServerExceptionContext.cs:25:    public class ServerExceptionContext : PerformContext
+Hangfire.Core/Server/ServerHeartbeat.cs:21:    internal class ServerHeartbeat : IBackgroundProcess
+Hangfire.Core/Server/ServerJobCancellationToken.cs:25:    internal class ServerJobCancellationToken : IJobCancellationToken
+Hangfire.Core/Server/ServerProcessExtensions.cs:27:    internal static class ServerProcessExtensions
+Hangfire.Core/Server/ServerWatchdog.cs:22:    internal class ServerWatchdog : IBackgroundProcess
+Hangfire.Core/Server/Worker.cs:41:    public class Worker : IBackgroundProcess
+Hangfire.Core/States/ApplyStateContext.cs:24:    public class ApplyStateContext : StateContext
+Hangfire.Core/States/AwaitingState.cs:39:    public class AwaitingState : IState
+Hangfire.Core/States/AwaitingState.cs:208:        internal class Handler : IStateHandler
+Hangfire.Core/States/BackgroundJobStateChanger.cs:26:    public class BackgroundJobStateChanger : IBackgroundJobStateChanger
+Hangfire.Core/States/CoreStateMachine.cs:22:    internal class CoreStateMachine : IStateMachine
+Hangfire.Core/States/DeletedState.cs:53:    public class DeletedState : IState
+Hangfire.Core/States/DeletedState.cs:132:        internal class Handler : IStateHandler
+Hangfire.Core/States/ElectStateContext.cs:27:    public class ElectStateContext : StateContext
+Hangfire.Core/States/EnqueuedState.cs:64:    public class EnqueuedState : IState
+Hangfire.Core/States/EnqueuedState.cs:234:        internal class Handler : IStateHandler
+Hangfire.Core/States/FailedState.cs:57:    public class FailedState : IState
+Hangfire.Core/States/ProcessingState.cs:30:    public class ProcessingState : IState
+Hangfire.Core/States/ScheduledState.cs:52:    public class ScheduledState : IState
+Hangfire.Core/States/ScheduledState.cs:162:        internal class Handler : IStateHandler
+Hangfire.Core/States/StateChangeContext.cs:25:    public class StateChangeContext
+Hangfire.Core/States/StateHandlerCollection.cs:23:    public class StateHandlerCollection
+Hangfire.Core/States/StateMachine.cs:24:    public class StateMachine : IStateMachine
+Hangfire.Core/States/SucceededState.cs:42:    public class SucceededState : IState
+Hangfire.Core/States/SucceededState.cs:190:        internal class Handler : IStateHandler
+Hangfire.Core/StatisticsHistoryAttribute.cs:24:    public sealed class StatisticsHistoryAttribute : JobFilterAttribute, IElectStateFilter
+Hangfire.Core/Storage/DistributedLockTimeoutException.cs:5:    public class DistributedLockTimeoutException : TimeoutException
+Hangfire.Core/Storage/InvocationData.cs:30:    public class InvocationData
+Hangfire.Core/Storage/JobData.cs:22:    public class JobData
+Hangfire.Core/Storage/JobStorageConnection.cs:26:    public abstract class JobStorageConnection : IStorageConnection
+Hangfire.Core/Storage/JobStorageTransaction.cs:24:    public abstract class JobStorageTransaction : IWriteOnlyTransaction
+Hangfire.Core/Storage/Monitoring/DeletedJobDto.cs:6:    public class DeletedJobDto
+Hangfire.Core/Storage/Monitoring/EnqueuedJobDto.cs:22:    public class EnqueuedJobDto
+Hangfire.Core/Storage/Monitoring/FailedJobDto.cs:22:    public class FailedJobDto
+Hangfire.Core/Storage/Monitoring/FetchedJobDto.cs:22:    public class FetchedJobDto
+Hangfire.Core/Storage/Monitoring/JobDetailsDto.cs:23:    public class JobDetailsDto
+Hangfire.Core/Storage/Monitoring/JobList.cs:21:    public class JobList<TDto> : List<KeyValuePair<string, TDto>>
+Hangfire.Core/Storage/Monitoring/ProcessingJobDto.cs:22:    public class ProcessingJobDto
+Hangfire.Core/Storage/Monitoring/QueueWithTopEnqueuedJobsDto.cs:19:    public class QueueWithTopEnqueuedJobsDto
+Hangfire.Core/Storage/Monitoring/ScheduledJobDto.cs:22:    public class ScheduledJobDto
+Hangfire.Core/Storage/Monitoring/ServerDto.cs:22:    public class ServerDto
+Hangfire.Core/Storage/Monitoring/StateHistoryDto.cs:22:    public class StateHistoryDto
+Hangfire.Core/Storage/Monitoring/StatisticsDto.cs:19:    public class StatisticsDto
+Hangfire.Core/Storage/Monitoring/SucceededJobDto.cs:22:    public class SucceededJobDto
+Hangfire.Core/Storage/RecurringJobDto.cs:22:    public class RecurringJobDto
+Hangfire.Core/Storage/StateData.cs:24:    public class StateData
+Hangfire.Core/Storage/StorageConnectionExtensions.cs:24:    public static class StorageConnectionExtensions
+#+END_EXAMPLE
+
+** SqlServer
+
+#+BEGIN_EXAMPLE
+Hangfire.SqlServer.Msmq/MessageQueueExtensions.cs:39:    internal static class MessageQueueExtensions
+Hangfire.SqlServer.Msmq/MsmqDtcTransaction.cs:23:    internal class MsmqDtcTransaction : IMsmqTransaction
+Hangfire.SqlServer.Msmq/MsmqExtensions.cs:24:    public static class MsmqExtensions
+Hangfire.SqlServer.Msmq/MsmqFetchedJob.cs:23:    internal class MsmqFetchedJob : IFetchedJob
+Hangfire.SqlServer.Msmq/MsmqInternalTransaction.cs:22:    internal class MsmqInternalTransaction : IMsmqTransaction
+Hangfire.SqlServer.Msmq/MsmqJobQueue.cs:25:    internal class MsmqJobQueue : IPersistentJobQueue
+Hangfire.SqlServer.Msmq/MsmqJobQueueMonitoringApi.cs:25:    internal class MsmqJobQueueMonitoringApi : IPersistentJobQueueMonitoringApi
+Hangfire.SqlServer.Msmq/MsmqJobQueueProvider.cs:21:    internal class MsmqJobQueueProvider : IPersistentJobQueueProvider
+Hangfire.SqlServer.Msmq/MsmqSqlServerStorageExtensions.cs:23:    public static class MsmqSqlServerStorageExtensions
+Hangfire.SqlServer/Constants.cs:3:    internal class Constants
+Hangfire.SqlServer/CountersAggregator.cs:27:    internal class CountersAggregator : IServerComponent
+Hangfire.SqlServer/EnqueuedAndFetchedCountDto.cs:19:    public class EnqueuedAndFetchedCountDto
+Hangfire.SqlServer/Entities/JobParameter.cs:19:    internal class JobParameter
+Hangfire.SqlServer/Entities/Server.cs:21:    internal class Server
+Hangfire.SqlServer/Entities/ServerData.cs:21:    internal class ServerData
+Hangfire.SqlServer/Entities/SqlHash.cs:21:    internal class SqlHash
+Hangfire.SqlServer/Entities/SqlJob.cs:21:    internal class SqlJob
+Hangfire.SqlServer/Entities/SqlState.cs:21:    internal class SqlState
+Hangfire.SqlServer/ExpirationManager.cs:29:    internal class ExpirationManager : IServerComponent
+Hangfire.SqlServer/PersistentJobQueueProviderCollection.cs:23:    public class PersistentJobQueueProviderCollection : IEnumerable<IPersistentJobQueueProvider>
+Hangfire.SqlServer/SqlCommandBatch.cs:24:    internal class SqlCommandBatch : IDisposable
+Hangfire.SqlServer/SqlCommandSet.cs:24:    internal class SqlCommandSet : IDisposable
+Hangfire.SqlServer/SqlServerBootstrapperConfigurationExtensions.cs:21:    public static class SqlServerBootstrapperConfigurationExtensions
+Hangfire.SqlServer/SqlServerConnection.cs:35:    internal class SqlServerConnection : JobStorageConnection
+Hangfire.SqlServer/SqlServerConnection.cs:606:        private class DisposableLock : IDisposable
+Hangfire.SqlServer/SqlServerDistributedLock.cs:28:    public class SqlServerDistributedLock : IDisposable
+Hangfire.SqlServer/SqlServerDistributedLockException.cs:21:    public class SqlServerDistributedLockException : Exception
+Hangfire.SqlServer/SqlServerJobQueue.cs:32:    internal class SqlServerJobQueue : IPersistentJobQueue
+Hangfire.SqlServer/SqlServerJobQueue.cs:187:        private class FetchedJob
+Hangfire.SqlServer/SqlServerJobQueueMonitoringApi.cs:34:    internal class SqlServerJobQueueMonitoringApi : IPersistentJobQueueMonitoringApi
+Hangfire.SqlServer/SqlServerJobQueueMonitoringApi.cs:140:        private class JobIdDto
+Hangfire.SqlServer/SqlServerJobQueueProvider.cs:22:    internal class SqlServerJobQueueProvider : IPersistentJobQueueProvider
+Hangfire.SqlServer/SqlServerMonitoringApi.cs:33:    internal class SqlServerMonitoringApi : IMonitoringApi
+Hangfire.SqlServer/SqlServerMonitoringApi.cs:593:        private class SafeDictionary<TKey, TValue> : Dictionary<TKey, TValue>
+Hangfire.SqlServer/SqlServerObjectsInstaller.cs:27:    public static class SqlServerObjectsInstaller
+Hangfire.SqlServer/SqlServerStorage.cs:38:    public class SqlServerStorage : JobStorage
+Hangfire.SqlServer/SqlServerStorageExtensions.cs:24:    public static class SqlServerStorageExtensions
+Hangfire.SqlServer/SqlServerStorageOptions.cs:26:    public class SqlServerStorageOptions
+Hangfire.SqlServer/SqlServerTimeoutJob.cs:10:    internal class SqlServerTimeoutJob : IFetchedJob
+Hangfire.SqlServer/SqlServerTransactionJob.cs:26:    internal class SqlServerTransactionJob : IFetchedJob
+Hangfire.SqlServer/SqlServerWriteOnlyTransaction.cs:34:    internal class SqlServerWriteOnlyTransaction : JobStorageTransaction
+#+END_EXAMPLE
