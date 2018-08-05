@@ -19,6 +19,7 @@ Also you can export org file to md using pandoc.
 
 [[https://www.hangfire.io/overview.html][Overview]]
 
+[[http://docs.hangfire.io/en/latest/][Detailed documentation]]
 
 ** Different goals
 
