@@ -19,6 +19,7 @@ Also you can export org file to md using pandoc.
 
 [[https://www.hangfire.io/overview.html][Overview]]
 
+[[http://docs.hangfire.io/en/latest/][Detailed documentation]]
 
 ** Different goals
 
@@ -68,6 +69,21 @@ TODO
 
 **** testing
 
-TODO
+***** easy
+
+ Testing some parts of the system should be fairly trivial.
+ [[https:github.com/HangfireIO/Hangfire/blob/master/src/Hangfire.Core/Cron.cs][Cron.cs]]
+ should easily translate to Haskell.
+ And the same goes for its tests in [[https://github.com/HangfireIO/Hangfire/blob/master/tests/Hangfire.Core.Tests/CronFacts.cs][CronFacts.cs]].
+
+
+***** hard
+
+There are parts that involve lots of exceptions. An I have no clue how to test
+these. Following two links are the relevant source and tests.
+
+[[https://github.com/HangfireIO/Hangfire/blob/master/src/Hangfire.Core/Server/DelayedJobScheduler.cs][DelayedJobScheduler.cs]]
+
+[[https://github.com/HangfireIO/Hangfire/blob/master/tests/Hangfire.Core.Tests/Server/DelayedJobSchedulerFacts.cs][DelayedJobSchedulerFacts.cs]]
 
 *** more TODO later
