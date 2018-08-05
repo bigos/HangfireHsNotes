@@ -82,10 +82,8 @@ TODO
 There are parts that involve lots of exceptions. An I have no clue how to test
 these. Following two links are the relevant source and tests.
 
-Please note that github doesn't display those links properly
+[[https://github.com/HangfireIO/Hangfire/blob/master/src/Hangfire.Core/Server/DelayedJobScheduler.cs][DelayedJobScheduler.cs]]
 
-[[https:github.com/HangfireIO/Hangfire/blob/master/src/Hangfire.Core/Server/DelayedJobScheduler.cs][DelayedJobScheduler.cs]]
-
-[[https:github.com/HangfireIO/Hangfire/blob/master/tests/Hangfire.Core.Tests/Server/DelayedJobSchedulerFacts.cs][DelayedJobSchedulerFacts.cs]]
+[[https://github.com/HangfireIO/Hangfire/blob/master/tests/Hangfire.Core.Tests/Server/DelayedJobSchedulerFacts.cs][DelayedJobSchedulerFacts.cs]]
 
 *** more TODO later
